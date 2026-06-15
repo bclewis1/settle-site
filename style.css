@@ -255,3 +255,138 @@ footer.colophon {
   margin-top: 1.1rem;
 }
 .backtop:hover { color: var(--rust); }
+
+/* ===================================================== Meeting the Lineages */
+.lin-intro {
+  font-size: 1.04rem;
+  line-height: 1.75;
+  margin: 1.6rem 0 2.2rem;
+}
+.lin-intro p { margin: 0 0 1rem; }
+
+.backtop-inline {
+  font-variant: small-caps;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  color: var(--rust);
+  text-decoration: none;
+}
+.backtop-inline:hover { text-decoration: underline; }
+
+/* featured-individual portraits */
+.portrait-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.1rem;
+  margin: 1.4rem 0 2rem;
+}
+figure.portrait { margin: 0; text-align: center; }
+figure.portrait img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  object-position: 50% 30%;
+  border: 1px solid var(--rule);
+  background: #1c1712;
+  filter: saturate(1.04);
+}
+figure.portrait .portrait-pending {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 230px;
+  border: 1px dashed var(--rule);
+  background: repeating-linear-gradient(45deg, #ece2cd, #ece2cd 8px, #e6dbc2 8px, #e6dbc2 16px);
+  color: #8a7a62;
+  font-variant: small-caps;
+  letter-spacing: 0.12em;
+  font-size: 0.82rem;
+}
+figure.portrait .portrait-pending span {
+  font-variant: normal;
+  letter-spacing: 0;
+  font-style: italic;
+  font-size: 0.74rem;
+  margin-top: 0.35rem;
+  max-width: 80%;
+}
+figure.portrait figcaption {
+  margin-top: 0.4rem;
+  font-size: 0.82rem;
+  font-style: italic;
+  color: #5a4a38;
+  line-height: 1.35;
+}
+figure.portrait .pname {
+  display: block;
+  font-style: normal;
+  font-variant: small-caps;
+  letter-spacing: 0.06em;
+  font-size: 0.92rem;
+  color: var(--ink);
+}
+
+/* the lineage roster */
+p.lede { font-size: 1.02rem; line-height: 1.7; color: #4a3c2c; }
+dl.lineages { margin: 1.1rem 0 2rem; }
+dl.lineages dt {
+  border-top: 1px solid var(--rule);
+  padding-top: 0.7rem;
+  margin-top: 0.7rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.55rem;
+}
+dl.lineages .lin-name {
+  font-size: 1.18rem;
+  font-weight: bold;
+  color: var(--rust);
+}
+dl.lineages .lin-craft {
+  font-style: italic;
+  color: #5a4a38;
+  font-size: 0.95rem;
+}
+dl.lineages .lin-standing {
+  margin-left: auto;
+  font-variant: small-caps;
+  letter-spacing: 0.1em;
+  font-size: 0.7rem;
+  color: #7a6a55;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 0.08rem 0.45rem;
+  white-space: nowrap;
+}
+dl.lineages dd {
+  margin: 0.4rem 0 0;
+  line-height: 1.6;
+}
+
+.lin-index { line-height: 2; }
+.lin-index a {
+  color: var(--ink);
+  text-decoration: none;
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+}
+.lin-index a:hover { color: var(--rust); }
+
+/* ===================================================== Cover / landing page */
+.titlepage.cover { margin-bottom: 1rem; }
+.titlepage.cover h1 { letter-spacing: 0.16em; }
+.landing-grid {
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  max-width: 52rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.landing-grid .chapter-card .card-img { height: 13rem; }
+.landing-grid .chapter-card .card-title { font-size: 1.5rem; }
+.landing-grid .chapter-card .card-teaser { font-size: 0.92rem; }
+.landing-grid .chapter-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 22px rgba(60, 40, 20, 0.2);
+}
